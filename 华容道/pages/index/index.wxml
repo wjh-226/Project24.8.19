@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+<image src="/images/logo.png" class="title.image" ></image>
+  <button bindtap="goTo3x3">3x3 模式</button>
+  <button bindtap="goTo4x4">4x4 模式</button>
+  <button bindtap="goTo5x5">5x5 模式</button>
+  <button bindtap="goToindex2">切换图片模式</button>
+  <block>
+    <image wx:if="{{isPlaying}}" src="/images/audioOn.png" class="audioImg"  catchtouchstart="togglePlay"></image>
+  <image wx:else src="/images/audioOff.png" class="audioImg"  catchtouchstart="togglePlay"></image>
+  </block>
+</view>
+
+
+

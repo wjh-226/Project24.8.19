@@ -1,0 +1,25 @@
+<!--pages/image5x5/image5x5.wxml-->
+<view class="container">
+  <view class="title">5x5 拼图</view>
+  <view class="grid">
+    <block wx:for="{{num}}" wx:key="index">
+      <view 
+        class="grid-item {{item === 25 ? 'empty' : ''}}" 
+        data-index="{{index}}" 
+        data-item="{{item}}" 
+        bindtap="onMoveTap">
+        <image 
+          wx:if="{{item !== 25}}"
+          src="{{images[item - 1]}}"
+        />
+      </view>
+    </block>
+  </view>
+  <view class="footer">
+    <text>{{success}}
+    </text>
+    <text>时间: {{time}}秒</text>
+    <button bindtap="timeBegin">开始</button>
+    <button bindtap="timeStop">停止</button>
+  </view>
+</view>

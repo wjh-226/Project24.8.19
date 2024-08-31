@@ -1,0 +1,10 @@
+<!--pages/index2/index2.wxml-->
+<view class="container">
+  <image src="/images/logo2.png" class="title.image" ></image>
+  <button bindtap="goTo3x3s">3x3 图片模式</button>
+  <button bindtap="goTo4x4s">4x4 图片模式</button>
+  <button bindtap="goTo5x5s">5x5 图片模式</button>
+  <button bindtap="goTo3x3">自选图片模式</button>
+  <button bindtap="goToindex">切换数字模式</button>
+ <image class="image" src="" mode=""/>
+</view>

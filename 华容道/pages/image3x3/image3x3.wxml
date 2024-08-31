@@ -1,0 +1,25 @@
+<!--pages/image3x3/image3x3.wxml-->
+<view class="container">
+  <view class="title">3x3 拼图</view>
+  <view class="grid">
+    <block wx:for="{{num}}" wx:key="index">
+      <view 
+        class="grid-item {{item === 9 ? 'empty' : ''}}" 
+        data-index="{{index}}" 
+        data-item="{{item}}" 
+        bindtap="onMoveTap">
+        <image 
+          wx:if="{{item !== 9}}"
+          src="{{images[item - 1]}}"
+        />
+      </view>
+    </block>
+  </view>
+  <view class="footer">
+    <text>{{success}}
+    </text>
+    <text>时间: {{time}}秒</text>
+    <button bindtap="timeBegin">开始</button>
+    <button bindtap="timeStop">结束</button>
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/page4x4/page4x4.wxml-->
+<view class="container">
+  <view class="title">4x4</view>
+  <view class="grid">
+    <block wx:for="{{num}}" wx:key="index">
+      <view 
+        class="tile {{item === 16 ? 'empty' : ''}}" 
+        data-index="{{index}}" 
+        data-item="{{item}}" 
+        bindtap="onMoveTap">
+        <text wx:if="{{item !== 16}}">{{item}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="footer">
+    <text>{{success}}
+    </text>
+    <text>时间: {{time}}秒</text>
+    <button bindtap="timeBegin">开始</button>
+    <button bindtap="timeStop">结束</button>
+  </view>
+</view>

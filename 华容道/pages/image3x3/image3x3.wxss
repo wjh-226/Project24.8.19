@@ -1,0 +1,64 @@
+/* pages/image3x3/image3x3.wxss */
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://img520.com/gSbOf0.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  grid-gap: 3px;
+  border-style: groove;
+  border-color: rgb(86, 184, 167);
+  border-radius: 10px;
+}
+
+.grid-item {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 24px;
+  color: #333;
+  overflow: hidden; /* 防止图片超出容器 */
+}
+
+.grid-item image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 保持比例，可能裁剪图片 */
+}
+
+.grid-item.empty {
+  background-color: transparent;
+  border: none;
+}
+.footer {
+  margin-top: 20px;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+
+button {
+  margin: 5px;
+  width: 100%;
+  border: none;
+  background-color: #005fc5;
+  color: white;
+  border-radius: 10px;
+}

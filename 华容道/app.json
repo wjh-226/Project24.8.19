@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index2/index2",
+    "pages/page3x3/page3x3",
+    "pages/3x3/3x3",
+    "pages/image3x3/image3x3",
+    "pages/page4x4/page4x4",
+    "pages/image4x4/image4x4",
+    "pages/image5x5/image5x5",
+    "pages/page5x5/page5x5"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#778980",
+    "navigationBarTitleText": "华容道",
+    "navigationBarTextStyle":"white"
+  }
+}

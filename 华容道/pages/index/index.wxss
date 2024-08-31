@@ -1,0 +1,50 @@
+/**index.wxss**/
+/* 首页容器样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://img520.com/gSbOf0.jpg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat
+}
+.title.image{
+ width: 65%;
+ height: 180px;
+}
+/* 按钮样式 */
+button {
+  width: 60%;
+  height: 60px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color:  transparent; /* 按钮背景色 */
+  color: rgb(80, 79, 79); /* 按钮文字颜色 */
+  font-size: 25px;
+  text-align: center;
+  line-height: 50px; /* 使文字垂直居中 */
+  cursor: pointer;
+  transition: background-color 0.3s; /* 按钮背景色过渡效果 */
+  border-style: groove;
+  border-color: rgb(0, 184, 153);
+  border-radius: 10px;
+}
+
+/* 按钮悬停效果 */
+button:hover {
+  background-color: #71cccf; /* 悬停时按钮背景色 */
+}
+
+/* 按钮点击效果 */
+button:active {
+  background-color: #58a9ac; /* 点击时按钮背景色 */
+}
+.audioImg{
+  width: 40px;
+  height: 40px;
+  margin-top: 100rpx;
+}

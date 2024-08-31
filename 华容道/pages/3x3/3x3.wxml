@@ -1,0 +1,14 @@
+<!--pages/3x3/3x3.wxml-->
+<view class="container">
+  <view class="title">3x3 自选图片</view>
+<!--提示图区域-->
+<button bindtap="chooseMedia">选择图片</button>
+  <image wx:if="{{imageSrc}}" src="{{imageSrc}}" mode="aspectFit" class="image"></image>
+<!--游戏画布-->
+    <canvas canvas-id="myCanvas"bindtouchstart='touchBox' ></canvas>
+<!--“重新开始”按钮-->
+  <view class="footer">
+  <text>{{win}}</text>
+    <button class="restart" bindtap='restartGame'>重新开始</button>
+  </view>
+</view>
